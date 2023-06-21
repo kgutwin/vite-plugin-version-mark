@@ -60,7 +60,7 @@ var analyticOptions = async (options) => {
     version = process.env["npm_package_version"],
     ifGitSHA = false,
     ifShortSHA = true,
-    gitCommand = "git rev-parse --short HEAD",
+    gitCommand = void 0,
     ifMeta = true,
     ifLog = true,
     ifGlobal = true
